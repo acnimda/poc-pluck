@@ -38,7 +38,7 @@ zip exploit.zip evil.php
   The script takes the following command-line arguments:
   - -u, --username : The username for the login attempt
   - -p, --password : The corresponding password
-  - --url : The base URL of the target Pluck CMS instance, e.g., "greenhorn.htb"
+  - --url : The base URL of the target Pluck CMS instance, e.g., "hack.tb"
 
   To run the script, use the following command:
 
