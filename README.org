@@ -19,7 +19,7 @@ zip exploit.zip evil.php
   #+END_SRC
 
 * Introduction
-This Python script is developed for educational purposes as part of an university lecture series on cybersecurity and ethical hacking. It provides a practical demonstration of how to automate the process of exploiting a known remote code execution vulnerability in =Pluck CMS version 4.7.18= and is an modified version of the original [[https://www.exploit-db.com/exploits/51592][exploit from exploit-db]].
+This Python script is developed for educational purposes as part of an university lecture series on cybersecurity and ethical hacking. It provides a practical demonstration of how to automate the process of exploiting a known remote code execution vulnerability in =Pluck CMS version 4.7.18= and is a modified version of the original [[https://www.exploit-db.com/exploits/51592][exploit from exploit-db]].
 
 * CVE-2023-50564
 This script is based on [[https://nvd.nist.gov/vuln/detail/CVE-2023-50564][cve-2023-50564]] where an arbitrary file upload vulnerability in the component =/inc/modules_install.php= of =Pluck-CMS v4.7.18= allows attackers to execute arbitrary code via uploading an evil ZIP file.

